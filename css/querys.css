@@ -1,5 +1,16 @@
-@media screen and (max-width: 1024px){
-    .wrap-main{
-        height: 100vh;
+@media screen and (max-width: 1000px){
+    .wrap_products{
+        grid-template-columns: 100px 1fr 100px;
+        grid-row: repeat(4, 1fr);
+        justify-content: center;
+    }
+
+    .product_container{
+        max-width: 50%;
+        text-align: center;
+    }
+
+    .product-img img{
+        object-fit: cover;
     }
 }

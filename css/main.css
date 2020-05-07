@@ -1,6 +1,7 @@
 :root{
     --green-color: #BFD34B;
     --gray-color: #2f2e41;
+    --grayligth-color: #fafafa;
 }
 
 body{
@@ -105,6 +106,13 @@ nav{
     font-weight: 600;
     border: none;
     border-radius: 5px;
+    transition: 1s;
+}
+
+.header-button:hover{
+    width: 180px;
+    height: 60px;
+    background-color: #c1c1c1;
 }
 
 .phone img{
@@ -135,7 +143,7 @@ nav{
 
 .wrap-main{
     width: 100%;
-    background-color: #fafafa;
+    background-color: var(--grayligth-color);
     height: 100vh;
 }
 
@@ -160,12 +168,12 @@ nav{
     grid-template-rows: 1fr;
     grid-gap: 20px;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .product_container{
     background-color: white;
     margin: 0;
-    position: relative;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 7px 2px rgba(189,187,189,1);
     -moz-box-shadow: 0px 0px 7px 2px rgba(189,187,189,1);
@@ -185,6 +193,8 @@ nav{
     -webkit-box-shadow: 0px 0px 7px 2px rgba(189,187,189,1);
     -moz-box-shadow: 0px 0px 7px 2px rgba(189,187,189,1);
     box-shadow: 0px 0px 7px 2px rgba(189,187,189,1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .product_detail p{
@@ -260,6 +270,11 @@ nav{
     border: none;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    transition: 1s;
+}
+
+.product_call-to-action:hover{
+    background-color: #c1c1c1;
 }
 
 .stripe{
@@ -306,4 +321,30 @@ nav{
     font-weight: 600;
     border: none;
     border-radius: 50px;
+    transition: 1s;
+}
+
+.stripe_call-to-action:hover{
+    background-color: #c1c1c1;
+    width: 310px;
+    height: 90px;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--grayligth-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #9b9b9b;
+    font-size: 1.1rem;
+}
+
+.wrap_footer{
+    text-align: center;
+}
+
+.footer_strong{
+    font-weight: 700;
 }
