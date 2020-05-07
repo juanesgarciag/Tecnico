@@ -285,6 +285,7 @@ nav{
     box-shadow: inset 0px -24px 58px 2px rgba(0,0,0,0.75);
     padding: 20px;
     color: white;
+    margin-top: 20px;
 }
 
 .stripe h2{
