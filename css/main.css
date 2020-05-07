@@ -1,5 +1,6 @@
 :root{
     --green-color: #BFD34B;
+    --gray-color: #2f2e41;
 }
 
 body{
@@ -21,7 +22,7 @@ img{
 /* ---------------Header----------------- */
 
 .header{
-    background-color: #2f2e41;
+    background-color: var(--gray-color);
     background-image: url('../img/background3.png');
     background-repeat: no-repeat;
     background-position: right top;
@@ -131,23 +132,26 @@ nav{
     color: #000;
 }
 
+
 .wrap-main{
     width: 100%;
     background-color: #fafafa;
-    height: 50vh;
+    height: 100vh;
 }
 
 .main_title{
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .main_subtitle{
     text-align: center;
     margin-top: 0;
+    margin-bottom: 0;
     font-weight: 500;
+    padding-bottom: 50px;
 }
 
 .wrap_products{
@@ -185,7 +189,7 @@ nav{
 
 .product_detail p{
     margin: 0;
-    padding: 2px 10px;
+    padding: 0 10px;
 }
 
 .product_detail h3{
@@ -236,4 +240,70 @@ nav{
 
 .producto_detail-pay img{
     height: auto;
+}
+
+.call-to-action{
+    margin-top: 1px;
+}
+
+.product_call-to-action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--green-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.stripe{
+    width: 100%;
+    text-align: center;
+    background-color: var(--gray-color);
+    -webkit-box-shadow: inset 0px -24px 58px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -24px 58px 2px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -24px 58px 2px rgba(0,0,0,0.75);
+    padding: 20px;
+    color: white;
+}
+
+.stripe h2{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.stripe_subtitle{
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.stripe_text{
+    font-size: 1.3rem;
+}
+
+.buttons-stripe{
+    display: flex;
+    justify-content: center;
+}
+
+.stripe_call-to-action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 300px;
+    height: 80px;
+    background-color: var(--green-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
 }
