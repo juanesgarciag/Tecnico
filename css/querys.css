@@ -30,7 +30,7 @@
 @media screen and (max-width: 768px){
 
     .wrap-main{
-        height: 400vh;
+        height: 390vh;
     }
 
     .product_container{
@@ -76,7 +76,7 @@
     }
 
     .wrap-main{
-        height: 350vh;
+        height: 360vh;
     }
 
     .header{
@@ -127,5 +127,12 @@
 
     .footer{
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .wrap-main{
+        height: 310vh;
     }
 }
